@@ -1,0 +1,12 @@
+.NavLink{
+    color: #000000; 
+    text-decoration: none; 
+  }
+.NavLink:hover {
+    color: #D2461C;
+    text-decoration: underline;
+  }
+
+.bottom-area{
+    background-color: #FFEBE5;
+}

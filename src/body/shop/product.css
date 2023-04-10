@@ -95,3 +95,26 @@
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
+
+@media (min-aspect-ratio: 1/1) {
+  .ribbon-style{
+    position: absolute;
+    padding-bottom: 0.6em ;
+    background-color: #D2461C;
+    color: white;
+    width: 50%;
+    font-size: 1em;
+  }
+  
+}
+
+@media screen and (max-aspect-ratio: 1/1){
+  .ribbon-style{
+    position: absolute;
+    padding-bottom: 0.6em ;
+    background-color: #D2461C;
+    color: white;
+    width: 50%;
+    font-size: 1em;
+  }
+}

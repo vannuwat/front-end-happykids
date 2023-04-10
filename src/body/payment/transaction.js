@@ -63,6 +63,7 @@ function PaymentForm () {
 
     if (error) {
       console.log(error);
+      alert("Your form is not correct!");
     } else {
       console.log(paymentMethod);
       setOpen(true);

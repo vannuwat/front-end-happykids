@@ -26,7 +26,7 @@ export function PopupItemDetail ({sku}){
       <button 
           onClick={()=> handleOpen()}
           style={{marginBottom: '5%'}}
-          className="App-default-button"        >
+          className="button-arrival"        >
           Add to Cart
       </button>
       {open && <ProductDetail open={open} handleClose={handleClose} sku={sku}/>}

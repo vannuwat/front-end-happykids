@@ -198,14 +198,11 @@ function TopBar() {
               <NavLink to="/shop">Shop Collection</NavLink>
               </li>
               <li className="menu-item">
-              <a href="/">Our Story</a>
+              <a href="/story">Our Story</a>
               </li>
-              <li className="menu-item">
-              <a href="/">Contact</a>
-              </li>  
               <AccountCircle />
               <li className="menu-item">
-              <a href="/">Log In</a>
+              <a href="/login">Log In</a>
               </li>
               <ul className='icon-item-cart' style={{marginLeft: '-1.5em'}}> 
                 <li >  

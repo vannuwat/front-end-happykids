@@ -12,7 +12,7 @@ function SliderComponent ({ slideData }) {
     autoplay: true,
     speed: 500,
     autoplaySpeed: 3000,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
   };
 
