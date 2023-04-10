@@ -1,0 +1,115 @@
+.topic-header {
+    padding: 0.1em;
+    text-align: center;
+    background-color: #ffebe5;
+  }
+
+.navtop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+  }
+
+.top-bar-menu {
+    display: grid; /* use flexbox for row alignment */
+    justify-content: center; /* space items evenly along the main axis */
+    background-color: #ffebe5; /* set background color */
+    color: #000000; /* set text color */
+  }
+  
+  .menu {
+    display: flex; /* use flexbox for row alignment */
+    list-style: none; /* remove bullet points from list */
+    margin:0 ;
+    padding: 0; 
+  }
+  
+  .menu-item {
+    margin-right: 2.5em; /* add spacing between items */
+  }
+
+  .icon-item-cart {
+    display: flex;
+    list-style: none; 
+    margin-top: -1em; 
+  }
+  
+  .menu-item a {
+    color: #000000; 
+    text-decoration: none; 
+  }
+  .menu-item a:hover {
+    color: #D2461C;
+    text-decoration: underline;
+  }
+  
+  .menu-item a.active {
+    color: #D2461C;
+  }
+
+.pop-up-from-right {
+  z-index: 300;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  min-width: 400px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out, opacity 0.5s;
+}
+
+.pop-up-from-right.visible {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.pop-up-from-right-header {
+  position: absolute;
+  text-align: center;
+  top: 0%;
+  color: black;
+  background-color: #CDECDE;
+  padding-bottom: 10%;
+  width: 100%;
+  min-height: 150px;
+}
+
+.pop-up-from-right-content {
+  position: absolute;
+  text-align: center;
+  top: 20vh;
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  height: 50vh;
+  overflow-y: scroll;
+}
+.pop-up-from-right-total {
+  position: absolute;
+  top: 75vh;
+  color: black;
+  background-color: #CDECDE;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.pop-up-items {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.pop-up-sub-items {
+  justify-content: 'center';
+  margin-top: 5%;
+}
+
+.value-control{
+  justify-content: 'center';
+}

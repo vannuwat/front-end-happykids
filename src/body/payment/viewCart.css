@@ -1,0 +1,70 @@
+.cart-view{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    top: 20vh;
+    padding: 0;
+    margin: 0;
+}
+
+.show-cart{
+    width: 100vw;
+    transform: scale(0.8);
+    margin-top: 5%;
+    margin-left: 10%;
+    padding: 0;
+    text-align: left;
+    float: left;
+    /* background-color: rgb(81, 207, 127); */
+}
+
+.order-summary{
+    transform: scale(0.8);
+    width: 100vw;
+    margin-top: 5%;
+    margin-right: 10%;
+    padding: 0;
+    text-align: left;
+    float: left;
+    /* background-color: blanchedalmond; */
+}
+
+.App-default-button{
+    background-color: #000000;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    padding: 8px 16px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .App-default-button:hover{
+  background-color: #D2461C;
+  color: rgb(252, 252, 252);
+  }
+
+
+  @media (min-aspect-ratio: 1/1) {
+    .my-element {
+      /* Styles for when the width is greater than the height */
+      display: flex;
+      border-bottom: 1px solid black;
+      
+    }
+  }
+  
+  /* Media query for screens with a width-to-height ratio less than 1 */
+  @media (max-aspect-ratio: 1/1) {
+    .my-element {
+      /* Styles for when the height is greater than the width */
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      border-bottom: 10px solid black;
+
+    }
+  }

@@ -1,0 +1,91 @@
+.popup {
+    position: absolute;
+    z-index: 100; 
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+.circle-button-components {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 50%;
+    /* Replace with your desired color */
+  cursor: pointer;
+}
+.circle-button-components:hover {
+  opacity: 0.5;
+  /* border: 20px solid rgba(0, 0, 0, 0.812); */
+}
+
+.loading-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+}
+
+.loading-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 16px;
+}
+.menu-item-popup{
+  color: #000000; 
+  text-decoration: underline;
+}
+
+.menu-item-popup:hover {
+  color: #ed4714;
+}
+
+.loading {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.loaded {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+@media (min-aspect-ratio: 1/1) {
+  .popup-element{
+    /* Styles for when the width is greater than the height */
+    display: flex;
+    max-width: 500px;
+
+  }
+  .popup-element-content {
+    min-width: 300px;
+    
+  }
+  .loading-page {
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    max-width: 100%;
+  }
+}
+
+/* Media query for screens with a width-to-height ratio less than 1 */
+@media (max-aspect-ratio: 1/1) {
+  .popup-element{
+    /* Styles for when the height is greater than the width */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 600px;
+  }
+
+  .popup-element-content {
+    /* Styles for when the height is greater than the width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+}

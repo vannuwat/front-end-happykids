@@ -1,0 +1,217 @@
+.payment-view{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    top: 20vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 0;
+}
+
+.payment-method{
+    width: 100%;
+    height: 100%;
+    margin-left: 10%;
+    padding: 0;
+    text-align: left;
+}
+
+.payment-form{
+    display: flex;
+    flex-direction: column ;
+    width: 10em;
+}
+
+.payment-form input[type="text"] {
+    border: none;
+    border-radius: 5%;
+    padding: 0.2em 0.5em;
+    font-size: 1em;
+    outline: none;
+    box-shadow: 0 0.1em 5px rgba(0, 0, 0, 0.5);
+  }
+
+.payment-form input[type="email"] {
+    border: none;
+    border-radius: 5%;
+    padding: 0.2em 0.5em;
+    font-size: 1em;
+    outline: none;
+    box-shadow: 0 0.1em 5px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    font-size: 1.0rem; /* Increase label font size to 1.2rem */
+}
+
+p {
+    font-size: 1em;
+  }
+
+  
+.payment-box{
+    width: 80%;
+    height: auto;
+    padding: 5%;
+    border: 1px solid #c4c4c4;
+    border-radius: 1em;
+    background-color: aliceblue;
+    
+}
+
+.tip-description{
+    width: 100vw;
+    margin-right: 10%;
+    padding: 0;
+    text-align: left;
+    float: left;
+    /* background-color: blanchedalmond; */
+}
+  
+.CardElementContainer {
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    padding: 0.1em;
+    border: 2px solid rgba(0, 0, 0, 0.481);
+}
+  
+.CardElement {
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+}
+.popup-thank{
+    position: fixed;
+    text-align: center;
+    margin: auto;
+    width: 30vw;
+    height: 20vh;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.popup-bg{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    top:0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 600;
+}
+
+.close-btn{
+    background-color: #000a01; /* Green background color */
+    border: none; /* Remove borders */
+    color: white; /* White text color */
+    padding: 12px 24px; /* Set padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it an inline element */
+    font-size: 16px; /* Set font size */
+    border-radius: 8px; /* Add rounded corners */
+    cursor: pointer; /* Add cursor on hover */
+}
+
+.close-btn:hover {
+    background-color: #000000c2; /* Darker green background color on hover */
+  }
+  
+.btn {
+    background-color: #000000;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  .btn:hover {
+    /* transform: translateY(5px); */
+    background-color: #057c0dfb;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-back {
+    background-color: #000000;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 6px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px 10px 10px 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  .btn-back:hover {
+    /* transform: translateY(5px); */
+    /* background-color: #057c0dfb; */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (min-aspect-ratio: 1/1) {
+    .payment-view {
+      /* Styles for when the width is greater than the height */
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: auto;
+      top: 20vh;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin: 0;
+    }
+    .payment-method{
+        min-width: 500px;
+        margin-left: 10%;
+        padding: 0;
+        text-align: left;
+    }
+    .tip-description{
+        width: 100%;
+        padding: 0;
+        text-align: left;
+    }
+    
+  }
+
+@media screen and (max-width: 800px){
+    .payment-view{
+        /* Styles for when the height is greater than the width */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-top: 5em;
+      }
+      .payment-method{
+        width: 100%;
+        margin-left: 10%;
+        padding: 0;
+        text-align: left;
+    }
+      .tip-description{
+          width: 100%;
+          height: 100%;
+          padding-left: 20%;
+          text-align: left;
+      }
+      
+}
+  

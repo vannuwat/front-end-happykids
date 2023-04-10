@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+.App-body {
+  margin-top: 10%;
+  width: 100%;
+}
+
+.App-default-button{
+  background-color: #000000;
+  border-radius: 0.5em;
+  border: none;
+  box-shadow: 0.2em 0.4em 0.4em rgba(0, 0, 0, 0.2);
+  font-size: 1em;
+  padding: 0.5em 1.5em;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.App-default-button:hover{
+background-color: #D2461C;
+color: rgb(252, 252, 252);
+}
