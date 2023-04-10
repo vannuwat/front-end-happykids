@@ -6,7 +6,7 @@ import axios from 'axios';
 import './product.css'; 
 
 
-function CheckboxList ({setCheckbox}) {
+function CheckboxList ({setSize}) {
   const [selectedSizes, setSelectedSizes] = useState([]);
   const handleCheckboxChange = (event) => {
     const selectedSize = event.target.name;
@@ -29,7 +29,7 @@ function CheckboxList ({setCheckbox}) {
 
   const myCheckboxes = Object.values(checkboxes);
   const concatenatedString = selectedSizes.join("%2C");
-  setCheckbox(concatenatedString);
+  setSize(concatenatedString);
 
   return (
     <FormControl component="fieldset">
@@ -41,7 +41,7 @@ function CheckboxList ({setCheckbox}) {
             checked={selectedSizes.includes(size.name)}
             onChange={handleCheckboxChange}
             name={size.name}
-            color="black"
+            color="secondary"
           />
         }
         label={size.label}
@@ -110,7 +110,7 @@ export function ShowAllProduct() {
 
     const [type, setType] = useState("all");
     const [sale, setSale] = useState([]);
-    const [special, setSpecial] = useState("");
+    const [special, setSpecial] = useState(false);
 
     useEffect(() => {
     const filters = {
@@ -131,7 +131,7 @@ export function ShowAllProduct() {
         setSale(saleProducts);
         setList(product);
         setLoading(false);
-        console.log(saleProducts);
+        console.log(product);
         })
         .catch(error => {
         console.error(error);
@@ -167,7 +167,7 @@ export function ShowAllProduct() {
                   </button>
                   <Collapse in={openCategory}>
                     <div style={{marginTop: '10%'}}>
-                        <button className={(type === "all" ? "category-selected-btn" : "category-btn")} style={{marginRight: '5%'}} onClick={() => {setCategory(''); setColor(''); setType("all");}}>
+                        <button className={(type === "all" ? "category-selected-btn" : "category-btn")} style={{marginRight: '5%'}} onClick={() => {setCategory(''); setColor(''); setType("all"); setSize('');}}>
                             All
                         </button>
                         <button className={(type === "T-shirt" ? "category-selected-btn" : "category-btn")} style={{marginRight: '5%'}} onClick={() => {setCategory('T%20shirts'); setType("T-shirt");}}>
@@ -193,7 +193,7 @@ export function ShowAllProduct() {
                     {openSize ? 'Collapse' : 'Size'}
                   </button>
                   <Collapse in={openSize}>
-                    <CheckboxList setCheckbox={setSize}/>
+                    <CheckboxList setSize={setSize}/>
                   </Collapse>
                 </div>
            
