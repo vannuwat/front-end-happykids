@@ -7,7 +7,7 @@ function Shop() {
       <div>
         <MyContextProvider>
             <TopBar />
-            <ShowAllProduct />
+            {/* <ShowAllProduct /> */}
         </MyContextProvider>
       </div>
     );

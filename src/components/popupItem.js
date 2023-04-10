@@ -1,8 +1,7 @@
 import React, {useState, useEffect}  from 'react';
 import { useContext } from 'react';
 import { MyContext } from '../context';
-import { Button,  Dialog, DialogContent, DialogContentText, DialogActions, Typography } from '@material-ui/core';
-import { Select, MenuItem, FormControl, TextField } from '@material-ui/core';
+import { Button,  Dialog, DialogContent, DialogContentText, DialogActions, Typography, Select, MenuItem, FormControl, TextField } from '@mui/material';
 import { ClipLoader } from 'react-spinners';
 import { Link} from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';

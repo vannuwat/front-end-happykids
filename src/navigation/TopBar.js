@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { AccountCircle, ShoppingCart, AddCircleOutline, RemoveCircleOutline } from '@material-ui/icons';
-import { IconButton, Grid, Typography} from '@material-ui/core';
-import Badge from '@material-ui/core/Badge';
-import DeleteIcon from '@material-ui/icons/Close';
+import { AccountCircle, ShoppingCart, AddCircleOutline, RemoveCircleOutline, Clear } from '@mui/icons-material';
+import { IconButton, Grid, Typography, Badge} from '@mui/material';
 import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
 import { MyContext } from '../context';
@@ -79,7 +77,7 @@ function ShowItemInCart(){
             <li key={item.product.id} style={{display: 'flex'}}>
               <div>
               <IconButton onClick={() => {handleDelete(item.product)}}>
-                <DeleteIcon />
+                <Clear />
               </IconButton>
               </div>
               <img

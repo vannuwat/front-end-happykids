@@ -1,8 +1,8 @@
 import React, {useState, useEffect}  from 'react';
 import { useContext } from 'react';
 import { MyContext } from '../../context';
-import { Typography, Container  } from '@material-ui/core';
-import { Select, MenuItem, FormControl, TextField } from '@material-ui/core';
+import { Typography, Container  } from '@mui/material';
+import { Select, MenuItem, FormControl, TextField } from '@mui/material';
 import { ClipLoader } from 'react-spinners';
 import DisplayProduct from "../../components/sliderProduct";
 import "./itemDetail.css";

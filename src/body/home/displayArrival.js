@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container } from '@material-ui/core';
+import { Container } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { ClipLoader } from 'react-spinners';
 import SliderProduct from "../../components/sliderProduct";

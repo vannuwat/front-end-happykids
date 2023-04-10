@@ -1,7 +1,6 @@
 import React, {useState, useEffect}  from 'react';
-import { Grid, Paper, Container, Collapse } from '@material-ui/core';
+import { Grid, Paper, Container, Collapse, Checkbox, FormControl, FormControlLabel } from '@mui/material';
 import { PopupItemDetail } from '../../components/popupItem';
-import { Checkbox, FormControl, FormControlLabel } from "@material-ui/core";
 import { ClipLoader } from 'react-spinners';
 import axios from 'axios';
 import './product.css'; 

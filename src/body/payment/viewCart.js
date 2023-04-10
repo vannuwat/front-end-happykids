@@ -1,7 +1,6 @@
 import React, { useState, useEffect} from 'react';
-import { AddCircleOutline, RemoveCircleOutline } from '@material-ui/icons';
-import { IconButton, Typography} from '@material-ui/core';
-import DeleteIcon from '@material-ui/icons/Close';
+import { AddCircleOutline, RemoveCircleOutline, Clear } from '@mui/icons-material';
+import { IconButton, Typography} from '@mui/material';
 import { useContext } from 'react';
 import { MyContext } from '../../context';
 import { useNavigate } from 'react-router-dom';
@@ -76,7 +75,7 @@ function ViewCartPayment(){
                 <li key={item.product.id} className="my-element" >
                     <div>
                         <IconButton onClick={() => {handleDelete(item.product)}}>
-                            <DeleteIcon />
+                            <Clear />
                         </IconButton>
                     </div>
                     <div style={{minWidth: '150px', marginTop: '10px'}}>
